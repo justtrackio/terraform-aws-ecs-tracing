@@ -7,13 +7,13 @@ Terraform module which creates an xray service with service discovery service
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.45.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.45.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.45.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.45.0 |
 
 ## Modules
 
@@ -28,8 +28,8 @@ Terraform module which creates an xray service with service discovery service
 
 | Name | Type |
 |------|------|
-| [aws_cloudwatch_log_group.xray](https://registry.terraform.io/providers/hashicorp/aws/4.45.0/docs/resources/cloudwatch_log_group) | resource |
-| [aws_service_discovery_service.xray](https://registry.terraform.io/providers/hashicorp/aws/4.45.0/docs/resources/service_discovery_service) | resource |
+| [aws_cloudwatch_log_group.xray](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
+| [aws_service_discovery_service.xray](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/service_discovery_service) | resource |
 
 ## Inputs
 
