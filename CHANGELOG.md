@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.0 (2022-12-15)
+
+
+### Features
+
+* Added module functionality ([#1](https://github.com/justtrackio/terraform-aws-ecs-tracing/issues/1)) ([43ecbdc](https://github.com/justtrackio/terraform-aws-ecs-tracing/commit/43ecbdcd336d5843140526af83e85cf197d0f933))
+
+
+### Bug Fixes
+
+* Allow version range instead of fixed version ([#2](https://github.com/justtrackio/terraform-aws-ecs-tracing/issues/2)) ([9486956](https://github.com/justtrackio/terraform-aws-ecs-tracing/commit/9486956f5ad8f54e14a9b71d4dcda3b761012d30))
+
 ## 1.0.0 (2022-12-08)
 
 
