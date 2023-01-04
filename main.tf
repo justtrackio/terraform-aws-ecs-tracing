@@ -60,7 +60,7 @@ module "xray_definition" {
     logDriver = "awslogs"
     options = {
       awslogs-group         = aws_cloudwatch_log_group.xray.name
-      awslogs-region        = var.region
+      awslogs-region        = var.aws_region
       awslogs-stream-prefix = "ecs"
     }
   }
