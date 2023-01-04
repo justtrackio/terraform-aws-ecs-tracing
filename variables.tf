@@ -1,3 +1,9 @@
+variable "aws_region" {
+  type        = string
+  description = "The AWS Region"
+  default     = "eu-central-1"
+}
+
 variable "ecs_cluster_arn" {
   type        = string
   description = "The ECS cluster ARN where this service will be deployed"
@@ -19,12 +25,6 @@ variable "network_mode" {
   default     = null
   description = "The networking mode used for task, can be null or awsvpc"
   type        = string
-}
-
-variable "region" {
-  type        = string
-  description = "The AWS Region"
-  default     = "eu-central-1"
 }
 
 variable "service_discovery_dns_namespace_id" {
