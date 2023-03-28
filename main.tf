@@ -68,7 +68,7 @@ module "xray_definition" {
 
 module "ecs_xray_task" {
   source  = "cloudposse/ecs-alb-service-task/aws"
-  version = "0.64.1"
+  version = "0.68.0"
 
   task_policy_arns          = ["arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess"]
   network_mode              = var.network_mode
