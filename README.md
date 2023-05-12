@@ -20,7 +20,7 @@ Terraform module which creates an xray service with service discovery service
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_ecs_xray_task"></a> [ecs\_xray\_task](#module\_ecs\_xray\_task) | cloudposse/ecs-alb-service-task/aws | 0.64.1 |
-| <a name="module_log_group_label"></a> [log\_group\_label](#module\_log\_group\_label) | cloudposse/label/null | 0.25.0 |
+| <a name="module_log_group_label"></a> [log\_group\_label](#module\_log\_group\_label) | justtrackio/label/null | 0.26.0 |
 | <a name="module_this"></a> [this](#module\_this) | justtrackio/label/null | 0.26.0 |
 | <a name="module_xray_definition"></a> [xray\_definition](#module\_xray\_definition) | cloudposse/ecs-container-definition/aws | 0.58.1 |
 

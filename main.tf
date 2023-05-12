@@ -6,8 +6,8 @@ locals {
 }
 
 module "log_group_label" {
-  source  = "cloudposse/label/null"
-  version = "0.25.0"
+  source  = "justtrackio/label/null"
+  version = "0.26.0"
 
   context = module.this.context
 
