@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/justtrackio/terraform-aws-ecs-tracing/compare/v1.0.1...v1.1.0) (2023-05-15)
+
+
+### Features
+
+* update_context_versions_variables_outputs ([#21](https://github.com/justtrackio/terraform-aws-ecs-tracing/issues/21)) ([1c34fcf](https://github.com/justtrackio/terraform-aws-ecs-tracing/commit/1c34fcfba628a52260892f10a8ccf110491a97fd))
+
 # Changelog
 
 All notable changes to this project will be documented in this file.
