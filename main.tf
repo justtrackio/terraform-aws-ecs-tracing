@@ -6,8 +6,8 @@ locals {
 }
 
 module "log_group_label" {
-  source  = "cloudposse/label/null"
-  version = "0.25.0"
+  source  = "justtrackio/label/null"
+  version = "0.26.0"
 
   context = module.this.context
 
@@ -60,7 +60,7 @@ module "xray_definition" {
     logDriver = "awslogs"
     options = {
       awslogs-group         = aws_cloudwatch_log_group.xray.name
-      awslogs-region        = var.aws_region
+      awslogs-region        = module.this.aws_region
       awslogs-stream-prefix = "ecs"
     }
   }
