@@ -41,7 +41,7 @@ resource "aws_service_discovery_service" "xray" {
 
 module "xray_definition" {
   source  = "cloudposse/ecs-container-definition/aws"
-  version = "0.58.1"
+  version = "0.61.1"
 
   container_image              = "public.ecr.aws/xray/aws-xray-daemon:3.3.5"
   container_name               = "xray-daemon"
