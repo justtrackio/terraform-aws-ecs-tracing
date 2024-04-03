@@ -11,11 +11,12 @@ module "log_group_label" {
 
   context = module.this.context
 
-  label_order = var.log_group_label_order
+  label_order = var.label_orders.cloudwatch
+  attributes  = ["xray"]
 }
 
 resource "aws_cloudwatch_log_group" "xray" {
-  name              = "${module.log_group_label.id}-xray"
+  name              = module.log_group_label.id
   tags              = module.log_group_label.tags
   retention_in_days = var.log_retention_in_days
 }
@@ -67,8 +68,8 @@ module "xray_definition" {
 }
 
 module "ecs_xray_task" {
-  source  = "cloudposse/ecs-alb-service-task/aws"
-  version = "0.64.1"
+  source  = "justtrackio/ecs-alb-service-task/aws"
+  version = "1.3.0"
 
   task_policy_arns          = ["arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess"]
   network_mode              = var.network_mode
@@ -87,6 +88,7 @@ module "ecs_xray_task" {
   vpc_id                             = var.vpc_id
   propagate_tags                     = "SERVICE"
   context                            = module.this.context
+  label_orders                       = var.label_orders
   service_placement_constraints      = local.xray_service_placement_constraints
   tags = {
     "spotinst.io/restrict-scale-down" = true
