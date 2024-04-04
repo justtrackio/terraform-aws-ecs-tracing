@@ -3,10 +3,15 @@ variable "ecs_cluster_arn" {
   description = "The ECS cluster ARN where this service will be deployed"
 }
 
-variable "log_group_label_order" {
-  default     = null
-  description = "Order of labels to use to generate the log group name"
-  type        = list(string)
+variable "label_orders" {
+  type = object({
+    cloudwatch = optional(list(string), ["environment", "stage", "name", "attributes"]),
+    ecs        = optional(list(string), ["stage", "name"]),
+    iam        = optional(list(string)),
+    vpc        = optional(list(string))
+  })
+  default     = {}
+  description = "Overrides the `labels_order` for the different labels to modify ID elements appear in the `id`"
 }
 
 variable "log_retention_in_days" {

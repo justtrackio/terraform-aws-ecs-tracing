@@ -2,7 +2,6 @@ module "example" {
   source = "../.."
 
   label_order                        = ["name", "attributes"]
-  log_group_label_order              = ["environment", "name"]
   name                               = "tracing"
   aws_region                         = "eu-central-1"
   stage                              = "stage"
