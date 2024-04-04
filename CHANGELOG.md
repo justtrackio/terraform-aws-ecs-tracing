@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/justtrackio/terraform-aws-ecs-tracing/compare/v1.1.0...v1.2.0) (2024-04-04)
+
+
+### Features
+
+* added dynamic naming of resources via label_orders variable ([#54](https://github.com/justtrackio/terraform-aws-ecs-tracing/issues/54)) ([ba6ea63](https://github.com/justtrackio/terraform-aws-ecs-tracing/commit/ba6ea639bec7b5c384654d9e7372ef6907a93b0e))
+
 ## [1.1.0](https://github.com/justtrackio/terraform-aws-ecs-tracing/compare/v1.0.1...v1.1.0) (2023-05-15)
 
 
