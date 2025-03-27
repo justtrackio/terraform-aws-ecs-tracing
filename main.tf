@@ -69,7 +69,7 @@ module "xray_definition" {
 
 module "ecs_xray_task" {
   source  = "justtrackio/ecs-alb-service-task/aws"
-  version = "1.3.0"
+  version = "1.6.0"
 
   task_policy_arns          = ["arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess"]
   network_mode              = var.network_mode
